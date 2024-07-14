@@ -84,6 +84,7 @@
             this.contratos = response.data;
         } catch (error) {
             console.error('Erro ao buscar contratos:', error);
+            alert("Verifique sua conexão");
         }
         },
         openModal(contrato) {
