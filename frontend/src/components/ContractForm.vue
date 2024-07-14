@@ -14,7 +14,6 @@
     </form>
   </div>
 </template>
-
 <script>
 import axios from 'axios';
 
@@ -29,11 +28,13 @@ export default {
     handleFileUpload(event) {
       this.contrato_pdf = event.target.files[0];
     },
+
+    // Funcao para enviar o formulario. O envio é feito por metodo POST, utilizando Json,
+    // redirecionando para a rota do backend
     async addContract() {
       const formData = new FormData();
       formData.append('titulo', this.titulo);
       formData.append('contrato_pdf', this.contrato_pdf);
-
       try {
         const response = await axios.post('http://localhost:3000/contratos', formData, {
           headers: {
@@ -41,6 +42,8 @@ export default {
           }
         });
         alert('Contrato enviado com sucesso:', response.data);
+        // redirecionando para o proprio formulario, para que os campos sejam limpos
+        window.location.href = '/upload';
       } catch (error) {
         console.error('Erro ao enviar o contrato:', error);
       }
@@ -48,7 +51,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>  
   form {
     width: 300px;

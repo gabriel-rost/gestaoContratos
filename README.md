@@ -18,14 +18,15 @@ Este é um projeto Vue.js criado com Vite
    cd gestaoContratos
 
 
-# instalar e iniciar servidor backend:
+# Instalação e inicialização do servidor backend:
 - cd backend
 - npm install
 - npm start
+- As requisições são feitas a partir do seguinte endereço: 'http://localhost:3000'
 
-# iniciar servidor frontend:
+# Instalação e inicialização frontend:
 - cd frontend
 - npm run dev
 
-# banco de dados:
+# Banco de dados:
 - Configuraçaõ para conexão em '/backend/connection.js'

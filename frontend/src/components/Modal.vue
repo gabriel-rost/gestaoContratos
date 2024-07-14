@@ -7,19 +7,19 @@
     </div>
   </template>
 <script>
-    export default {
-        props: {
-            visible: {
-            type: Boolean,
-            required: true
-            }
-        },
-        methods: {
-            closeModal() {
-            this.$emit('close');
-            }
-        }
-    };
+  export default {
+      props: {
+          visible: {
+          type: Boolean,
+          required: true
+          }
+      },
+      methods: {
+          closeModal() {
+          this.$emit('close');
+          }
+      }
+  };
 </script>
 <style scoped>
   .modal {
