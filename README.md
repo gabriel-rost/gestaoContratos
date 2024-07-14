@@ -1,4 +1,4 @@
-# gestaoContratos
+# Desafio: Aplicação de Gestão de Contratos
 Aplicação de Gestão de Contratos
 
 Este é um projeto Vue.js criado com Vite
@@ -19,14 +19,17 @@ Este é um projeto Vue.js criado com Vite
 
 
 # Instalação e inicialização do servidor backend:
-- cd backend
-- npm install
-- npm start
+```bash
+cd backend
+npm install
+npm start
+```
 - As requisições são feitas a partir do seguinte endereço: 'http://localhost:3000'
 
 # Instalação e inicialização frontend:
-- cd frontend
-- npm run dev
-
+```bash
+cd frontend
+npm run dev
+````
 # Banco de dados:
-- Configuraçaõ para conexão em '/backend/connection.js'
+- Configurações para a conexão em: '/backend/connection.js'
